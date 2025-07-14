@@ -1,8 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 :root {
   --soft-pink: #fdf2f8;
@@ -16,6 +17,7 @@
   --pink-700: #be185d;
   --pink-800: #9d174d;
   --pink-900: #831843;
+  --custom-bg: #fdfdfd;
 }
 
 * {
@@ -23,7 +25,7 @@
 }
 
 body {
-  background-color: #fafafa;
+  background-color: var(--custom-bg);
   color: #374151;
   line-height: 1.6;
 }
@@ -89,4 +91,9 @@ textarea:focus {
 
 .text-muted {
   @apply text-gray-500;
+}
+
+/* Custom background */
+.bg-custom {
+  background-color: var(--custom-bg);
 }

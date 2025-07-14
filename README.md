@@ -1,4 +1,4 @@
-# NailArt - Nail Artist Social Media App
+# nailscape - Nail Artist Social Media App
 
 A Pinterest-like social media platform for nail artists to showcase their work and for clients to discover nail inspiration.
 
@@ -28,7 +28,7 @@ A Pinterest-like social media platform for nail artists to showcase their work a
 
 ```bash
 git clone <your-repo-url>
-cd nail-app
+cd nailscape
 npm install
 ```
 

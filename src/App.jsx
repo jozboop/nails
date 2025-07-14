@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { UserAuth } from './context/AuthContext'
 import Home from './components/Home'
+import About from './components/About'
 import ArtistProfile from './components/ArtistProfile'
 import ArtistDashboard from './components/ArtistDashboard'
 import Signin from './components/Signin'
@@ -12,10 +13,11 @@ function App() {
 
   return (
     <Router>
-      <div className="min-h-screen bg-gray-50">
+      <div className="min-h-screen bg-custom">
         <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
           <Route path="/artist/:id" element={<ArtistProfile />} />
           <Route path="/signin" element={<Signin />} />
           <Route path="/signup" element={<Signup />} />
